@@ -1,7 +1,12 @@
 const loadData = async () => {
-    const res = await fetch('http://127.0.0.1:5500/data.json');
-    const data = await res.json();
-    displayData(data)
+    try {
+        const res = await fetch('http://127.0.0.1:5500/data.json');
+        const data = await res.json();
+        displayData(data)
+    }
+    catch (err) {
+        console.log(err)
+    }
 }
 
 const displayData = (cars) => {
