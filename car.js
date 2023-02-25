@@ -12,7 +12,7 @@ const loadData = async () => {
 const displayData = (cars) => {
     const container = document.getElementById('container')
     cars.forEach(car => {
-        console.log(car);
+        // console.log(car);
         const div = document.createElement('div');
         div.classList.add('card', 'card-compact', 'w-full', 'bg-base-100', 'shadow-xl', 'border',);
         div.innerHTML = `
